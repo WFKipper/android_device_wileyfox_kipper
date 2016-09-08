@@ -15,12 +15,12 @@
 $(call inherit-product, device/wileyfox/kipper/full_kipper.mk)
 
 # Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+$(call inherit-product, vendor/orion/config/common_full_phone.mk)
 
 # Must define platform variant before including any common things
 TARGET_BOARD_PLATFORM_VARIANT := msm8939
 
-PRODUCT_NAME := cm_kipper
+PRODUCT_NAME := orion_kipper
 BOARD_VENDOR := wileyfox
 PRODUCT_DEVICE := kipper
 
@@ -33,3 +33,10 @@ PRODUCT_BRAND := Wileyfox
 TARGET_VENDOR := wileyfox
 TARGET_VENDOR_PRODUCT_NAME := Storm
 TARGET_VENDOR_DEVICE_NAME := kipper
+
+# BootAnimation Path
+TARGET_SCREEN_HEIGHT := 1920
+TARGET_SCREEN_WIDTH  := 1080
+PRODUCT_COPY_FILES += \
+	 	vendor/orion/config/media/bootanimation.zip:system/media/bootanimation.zip
+
