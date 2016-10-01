@@ -17,6 +17,7 @@ LOCAL_SRC_FILES := \
         wrapper/QualcommCamera.cpp
 
 LOCAL_CFLAGS = -Wall -Wextra -Werror
+LOCAL_CFLAGS += -DHAS_MULTIMEDIA_HINTS
 
 #Debug logs are enabled
 #LOCAL_CFLAGS += -DDISABLE_DEBUG_LOG
@@ -25,9 +26,9 @@ LOCAL_CFLAGS = -Wall -Wextra -Werror
 #LOCAL_CFLAGS += -DUSE_VENDOR_CAMERA_EXT
 #endif
 
-ifeq ($(TARGET_USES_AOSP),true)
-LOCAL_CFLAGS += -DVANILLA_HAL
-endif
+#ifeq ($(TARGET_USES_AOSP),true)
+#LOCAL_CFLAGS += -DVANILLA_HAL
+#endif
 
 ifneq ($(call is-platform-sdk-version-at-least,18),true)
 LOCAL_CFLAGS += -DUSE_JB_MR1
@@ -77,6 +78,6 @@ LOCAL_MODULE_TAGS := optional
 
 include $(BUILD_SHARED_LIBRARY)
 
-ifeq ($(TARGET_USES_AOSP),)
+ifeq ($(TARGET_USES_AOSP),false)
 include $(LOCAL_PATH)/test/Android.mk
 endif
