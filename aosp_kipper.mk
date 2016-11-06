@@ -22,6 +22,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/wileyfox/kipper/device.mk)
 $(call inherit-product, vendor/aosp/common.mk)
 
+# Must define platform variant before including any common things
+TARGET_BOARD_PLATFORM_VARIANT := msm8939
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := kipper
 PRODUCT_NAME := aosp_kipper
