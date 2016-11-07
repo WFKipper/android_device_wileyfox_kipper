@@ -1,1 +1,2 @@
 add_lunch_combo aosp_kipper-userdebug
+add_lunch_combo aosp_kipper-eng
