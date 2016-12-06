@@ -182,16 +182,16 @@
     <bool name="config_intrusiveBatteryLed">true</bool>
 
     <!-- Does the notification LED support multiple colors?
-                  Used to decide if the user can change the colors -->
-    <bool name="config_multiColorNotificationLed">true</bool>
+                  Used to decide if the user can change the colors 
+    <bool name="config_multiColorNotificationLed">true</bool> -->
 
     <!-- Does the battery LED support multiple colors?
-                  Used to decide if the user can change the colors -->
-    <bool name="config_multiColorBatteryLed">true</bool>
+                  Used to decide if the user can change the colors 
+    <bool name="config_multiColorBatteryLed">true</bool> -->
 
     <!-- Do the battery/notification LEDs support pulsing?
-         Used to decide if we show pulse settings -->
-    <bool name="config_ledCanPulse">false</bool>
+         Used to decide if we show pulse settings 
+    <bool name="config_ledCanPulse">false</bool> -->
 
     <!-- Indicate whether the SD card is accessible without removing the battery. -->
     <bool name="config_batterySdCardAccessibility">true</bool>
