@@ -1,0 +1,3 @@
+add_lunch_combo cm_kipper-user
+add_lunch_combo cm_kipper-userdebug
+add_lunch_combo cm_kipper-eng
