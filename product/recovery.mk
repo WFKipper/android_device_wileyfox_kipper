@@ -1,3 +1,3 @@
 # Recovery
-PRODUCT_EXTRA_RECOVERY_KEYS += \
-    $(LOCAL_PATH)/kipper-releasekey
+PRODUCT_COPY_FILES += \
+	$(LOCAL_PATH)/recovery/root/etc/twrp.fstab:recovery/root/etc/twrp.fstab
