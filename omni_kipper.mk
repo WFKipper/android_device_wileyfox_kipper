@@ -12,15 +12,24 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product, device/wileyfox/kipper/full_kipper.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk) 
 
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Get the prebuilt list of APNs
+$(call inherit-product, vendor/omni/config/gsm.mk)
+
+# Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
+
+# must be before including omni part
+TARGET_BOOTANIMATION_SIZE := 1080x720
+
+# Inherit from our custom product configuration
+$(call inherit-product, vendor/omni/config/common.mk)
 
 # Must define platform variant before including any common things
 TARGET_BOARD_PLATFORM_VARIANT := msm8939
 
-PRODUCT_NAME := cm_kipper
+PRODUCT_NAME := omni_kipper
 BOARD_VENDOR := wileyfox
 PRODUCT_DEVICE := kipper
 
