@@ -1,3 +1,2 @@
 # Wifi
-CONFIG_EAP_PROXY := qmi
 CONFIG_EAP_PROXY_DUAL_SIM := true
