@@ -1,3 +1,3 @@
-add_lunch_combo cm_kipper-user
-add_lunch_combo cm_kipper-userdebug
-add_lunch_combo cm_kipper-eng
+add_lunch_combo omni_kipper-user
+add_lunch_combo omni_kipper-userdebug
+add_lunch_combo omni_kipper-eng
