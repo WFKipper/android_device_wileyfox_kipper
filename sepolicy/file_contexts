@@ -6,3 +6,9 @@
 
 # Touchscreen
 /sys/devices/soc.0/78b9000.i2c/i2c-5/5-0024/main_ttsp_core.cyttsp4_i2c_adapter/btn_enabled      u:object_r:touchpanel_sysfs:s0
+
+# Data files
+/data/misc/perfd(/.*)?                     u:object_r:mpctl_data_file:s0
+/data/misc/perfd/mpctl                     u:object_r:mpctl_socket:s0
+
+/sys/module/msm_performance(/.*)?          u:object_r:sysfs_performance:s0
