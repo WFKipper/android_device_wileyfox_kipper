@@ -4,6 +4,7 @@ Until CyanogenMod gets official cm-14.1 into its repo, this needs a specific
 build method.
 
 First, copy the contents of _REPO_SETTINGS_ to <build_root>/.repo/local_manifests/
+of your vanilla cm-14.1 tree and do a repo sync --force-sync
 
 ***IMPORTANT***
 Do not run brunch. This will overload jack and it'll either fail with an
