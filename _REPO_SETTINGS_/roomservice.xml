@@ -2,6 +2,6 @@
 <manifest>
   <project name="ChronosUK/android_device_wileyfox_kipper" path="device/wileyfox/kipper" remote="github" />
   <project name="WFKipper/android_device_cyanogen_msm8916-common" path="device/cyanogen/msm8916-common" remote="github" />
-  <project name="CyanogenMod/android_device_qcom_common" path="device/qcom/common" remote="github" />
+  <project name="LineageOS/android_device_qcom_common" path="device/qcom/common" remote="github" />
   <project name="WFKipper/android_kernel_cyanogen_msm8916" path="kernel/cyanogen/msm8916" remote="github" revision="foxy-n" />
 </manifest>
