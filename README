@@ -1,10 +1,16 @@
 Device tree for Wileyfox Storm
 
-Until CyanogenMod gets official cm-14.1 into its repo, this needs a specific
+Until LineageOS gets official cm-14.1 into its repo, this needs a specific
 build method.
 
-First, copy the contents of _REPO_SETTINGS_ to <build_root>/.repo/local_manifests/
-of your vanilla cm-14.1 tree and do a repo sync --force-sync
+Grab a vanilla clone of LineageOS cm-14.1 branch
+
+repo init -u https://github.com/LineageOS/android.git -b cm-14.1
+
+Now copy the contents of _REPO_SETTINGS_ to <build_root>/.repo/local_manifests/
+of your vanilla LineageOS cm-14.1 tree then do 
+
+repo sync --force-sync
 
 ***IMPORTANT***
 Do not run brunch. This will overload jack and it'll either fail with an
