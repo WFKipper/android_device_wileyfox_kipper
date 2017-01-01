@@ -1,5 +1,2 @@
 # Hardware revision
 ro.product.model.platform=1
-# Lower cpufreq limits
-ro.min_freq_0=200000
-ro.min_freq_4=200000
