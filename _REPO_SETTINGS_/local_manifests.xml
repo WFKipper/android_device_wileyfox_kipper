@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+<project name="ChronosUK/proprietary_vendor_wileyfox" path="vendor/wileyfox" remote="github" />
+</manifest>
